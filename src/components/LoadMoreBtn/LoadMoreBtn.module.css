@@ -1,0 +1,45 @@
+.loadBtn {
+    padding: 20px 50px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #800000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+}
+.loadBtn:hover {
+    background-color: #b22222;
+    transform: scale(1.05);
+}
+.loadBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+@media (prefers-color-scheme: light) {
+    .loadBtn {
+        background-color: #4F0014;
+        color: #121212;
+    }
+    .loadBtn:hover {
+        background-color: #b22222;
+    }
+}
+@media (max-width: 768px) {
+    .loadBtn {
+        width: 90%;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+}
+@media (max-width: 1024px) {
+    .loadBtn {
+        width: 80%;
+        padding: 18px 0;
+        font-size: 17px;
+    }
+}
